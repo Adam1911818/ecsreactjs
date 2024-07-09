@@ -1,0 +1,6 @@
+# Dockerfile for Strapi API
+FROM strapi/strapi
+COPY ./ /srv/app
+EXPOSE 1337
+CMD ["strapi", "start"]
+
